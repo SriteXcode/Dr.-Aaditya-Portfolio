@@ -612,7 +612,7 @@ const academicData = {
     title: "Researcher · Learner · Educator",
     aboutHero : "Dr. Aditya Khamparia is an eminent academician who plays versatile roles juggling between lectures, research, publications, consultancy, community service, and PhD supervision.",
     about: "Dr. Aditya Khamparia is an eminent academician who plays versatile roles juggling between lectures, research, publications, consultancy, community service, and PhD supervision. With 8 years of rich expertise in teaching and one year in industry, he focuses on rational and practical learning. He has contributed massive literature in Educational Technologies, Intelligent Data Analysis, Nature-Inspired Computing, Machine Learning, Deep Learning and Soft Computing.",
-    image: hero,
+    image: "https://ik.imagekit.io/nx2mu5rdoc/dummy/hero.png?updatedAt=1756370356605",
     email: "aditya.khamparia88@gmail.com",
     phone: "+91 XXX XXX XXXX",
     location: "Lucknow, Uttar Pradesh, India"
