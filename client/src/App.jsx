@@ -966,7 +966,7 @@ const AcademicPortfolio = () => {
           </div>
           <div className="flex justify-center items-center w-86 h-98 ml-32 overflow-hidden rounded-b-full shadow-2xl">
   <img
-    src="https://ik.imagekit.io/nx2mu5rdoc/dummy/hero.png?updatedAt=1756370356605"
+    src={hero}
     alt={data.profile.name}
     className="w-full h-full object-cover"
   />
