@@ -1,0 +1,17 @@
+[{
+  "name": "Ritesh",
+  "title": "Full Stack Developer",
+  "email": "ritesh@example.com",
+  "location": "India",
+  "socials": {
+    "github": "https://github.com/ritesh",
+    "linkedin": "https://linkedin.com/in/ritesh"
+  }
+},
+{
+    "name": "Aditya Khamparia, Ph.D.",
+    "tagline": "Researcher · Learner · Educator",
+    "email": "aditya.khamparia88@gmail.com",
+    "bio": "Dr. Aditya Khamparia is an eminent academician with 8 years of teaching and 1 year of industry experience. His expertise spans Educational Technologies, Intelligent Data Analysis, Machine Learning, Deep Learning, and Soft Computing. He has published over 73 research papers, served as guest editor for journals, and contributed significantly to academia and research worldwide."
+  }
+]

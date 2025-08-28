@@ -1,0 +1,37 @@
+[
+  {
+    "journals": [
+      {
+        "title": "DCAVN: Cervical cancer prediction and classification using deep convolutional and variational autoencoder network",
+        "authors": ["Aditya Khamparia", "Deepak Gupta", "Joel JPC Rodrigues", "Victor Hugo C de Albuquerque"],
+        "journal": "Multimedia Tools and Applications",
+        "publisher": "Springer",
+        "year": 2020,
+        "doi": "https://doi.org/10.1007/s11042-020-09607-w",
+        "indexing": "SCIE",
+        "impact_factor": 2.69
+      },
+      {
+        "title": "Internet of health things driven deep learning system for detection and classification of cervical cells",
+        "authors": ["Aditya Khamparia", "Deepak Gupta", "Victor Hugo C de Albuquerque", "Arun Kumar Sangaiah", "Rutvij H. Jhaveri"],
+        "journal": "Journal of Supercomputing",
+        "publisher": "Springer",
+        "year": 2020,
+        "doi": "10.1007/s11227-020-03159-4",
+        "indexing": "SCIE",
+        "impact_factor": 2.25
+      }
+    ],
+    "conferences": [
+      {
+        "title": "Adaptive Thresholding Skin Lesion Segmentation with Gabor Filters and PCA",
+        "authors": ["Dang NH Thanh", "Nguyen Ngoc Hien", "VB Surya Prasath", "Uğur Erkan", "Aditya Khamparia"],
+        "conference": "Intelligent Computing in Engineering",
+        "location": "Singapore",
+        "publisher": "Springer",
+        "year": 2020,
+        "indexing": "Scopus"
+      }
+    ]
+  }
+]

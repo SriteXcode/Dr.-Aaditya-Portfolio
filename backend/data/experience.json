@@ -1,0 +1,31 @@
+[
+  {
+    "role": "Web Developer Intern",
+    "company": "TechCorp",
+    "duration": "June 2023 - Aug 2023",
+    "details": "Worked on MERN stack applications"
+  },{
+      "role": "Assistant Professor",
+      "institution": "Babasaheb Bhimrao Ambedkar University, Lucknow",
+      "duration": "April 2021 - Present",
+      "courses": ["C Programming", "C++ Lab", "Computer Graphics"]
+    },
+    {
+      "role": "Associate Professor",
+      "institution": "Lovely Professional University, Punjab",
+      "duration": "Jan 2020 - Mar 2021",
+      "courses": ["C Programming", "Machine Learning", "Soft Computing Techniques"]
+    },
+    {
+      "role": "Post Doctoral Researcher",
+      "institution": "University of Fortaleza, Brazil",
+      "duration": "Dec 2018 - Dec 2019",
+      "focus": ["Deep Learning", "Artificial Intelligence", "Python Programming"]
+    },
+    {
+      "role": "Assistant Professor",
+      "institution": "Lovely Professional University, Punjab",
+      "duration": "Aug 2013 - Dec 2018",
+      "courses": ["Deep Learning", "Machine Learning", "Artificial Intelligence", "Python Programming"]
+    }
+]

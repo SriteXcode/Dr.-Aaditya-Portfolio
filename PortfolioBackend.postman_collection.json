@@ -1,0 +1,149 @@
+{
+  "info": {
+    "_postman_id": "abcd1234-5678-efgh-9101-ijklmnopqrst",
+    "name": "Portfolio Backend CRUD",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Profile",
+      "item": [
+        {
+          "name": "Get Profile",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:5000/api/profile",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["api", "profile"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Education",
+      "item": [
+        {
+          "name": "Get Education",
+          "request": { "method": "GET", "url": { "raw": "http://localhost:5000/api/education", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["api", "education"] } }
+        }
+      ]
+    },
+    {
+      "name": "Experience",
+      "item": [
+        {
+          "name": "Get Experience",
+          "request": { "method": "GET", "url": { "raw": "http://localhost:5000/api/experience", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["api", "experience"] } }
+        }
+      ]
+    },
+    {
+      "name": "Research Projects",
+      "item": [
+        {
+          "name": "Get Research Projects",
+          "request": { "method": "GET", "url": { "raw": "http://localhost:5000/api/research-projects", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["api", "research-projects"] } }
+        }
+      ]
+    },
+    {
+      "name": "Publications",
+      "item": [
+        {
+          "name": "Get Journals",
+          "request": { "method": "GET", "url": { "raw": "http://localhost:5000/api/publications/journals", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["api", "publications", "journals"] } }
+        },
+        {
+          "name": "Get Conferences",
+          "request": { "method": "GET", "url": { "raw": "http://localhost:5000/api/publications/conferences", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["api", "publications", "conferences"] } }
+        }
+      ]
+    },
+    {
+      "name": "Books / Thesis / Research Papers",
+      "item": [
+        {
+          "name": "Get All Books",
+          "request": { "method": "GET", "url": { "raw": "http://localhost:5000/api/admin/books", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["api", "admin", "books"] } }
+        },
+        {
+          "name": "Add Book",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"title\": \"New Book\",\n  \"category\": \"Tech\",\n  \"description\": \"Desc\",\n  \"publishedYear\": \"2025\",\n  \"publisher\": \"Pub Name\",\n  \"image\": \"/api/placeholder/300/400\",\n  \"document\": \"/documents/new-book.pdf\"\n}" },
+            "url": { "raw": "http://localhost:5000/api/admin/books", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["api", "admin", "books"] }
+          }
+        },
+        {
+          "name": "Update Book",
+          "request": {
+            "method": "PUT",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{ \"title\": \"Updated Book Title\" }" },
+            "url": { "raw": "http://localhost:5000/api/admin/books/:id", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["api", "admin", "books", ":id"] }
+          }
+        },
+        {
+          "name": "Delete Book",
+          "request": { "method": "DELETE", "url": { "raw": "http://localhost:5000/api/admin/books/:id", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["api", "admin", "books", ":id"] } }
+        }
+      ]
+    },
+    {
+      "name": "Projects / Skills / Activities / Achievements / Memberships",
+      "item": [
+        {
+          "name": "Get Projects",
+          "request": { "method": "GET", "url": { "raw": "http://localhost:5000/api/projects", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["api", "projects"] } }
+        },
+        {
+          "name": "Get Skills",
+          "request": { "method": "GET", "url": { "raw": "http://localhost:5000/api/skills", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["api", "skills"] } }
+        },
+        {
+          "name": "Get Activities",
+          "request": { "method": "GET", "url": { "raw": "http://localhost:5000/api/activities", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["api", "activities"] } }
+        },
+        {
+          "name": "Get Achievements",
+          "request": { "method": "GET", "url": { "raw": "http://localhost:5000/api/achievements", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["api", "achievements"] } }
+        },
+        {
+          "name": "Get Memberships",
+          "request": { "method": "GET", "url": { "raw": "http://localhost:5000/api/memberships", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["api", "memberships"] } }
+        }
+      ]
+    },
+    {
+      "name": "Messages",
+      "item": [
+        {
+          "name": "Get All Messages",
+          "request": { "method": "GET", "url": { "raw": "http://localhost:5000/api/admin/messages", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["api", "admin", "messages"] } }
+        },
+        {
+          "name": "Add Message",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{ \"name\":\"John\",\"email\":\"john@test.com\",\"message\":\"Hi!\",\"date\":\"2025-08-28\",\"read\":false }" },
+            "url": { "raw": "http://localhost:5000/api/admin/messages", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["api", "admin", "messages"] }
+          }
+        },
+        {
+          "name": "Mark Read",
+          "request": { "method": "PUT", "header": [{ "key": "Content-Type", "value": "application/json" }], "body": { "mode": "raw", "raw": "{}" }, "url": { "raw": "http://localhost:5000/api/admin/messages/:id/read", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["api", "admin", "messages", ":id", "read"] } }
+        },
+        {
+          "name": "Delete Message",
+          "request": { "method": "DELETE", "url": { "raw": "http://localhost:5000/api/admin/messages/:id", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["api", "admin", "messages", ":id"] } }
+        }
+      ]
+    }
+  ]
+}

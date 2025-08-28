@@ -1,0 +1,157 @@
+{
+  "profile": {
+    "name": "Aditya Khamparia, Ph.D.",
+    "tagline": "Researcher · Learner · Educator",
+    "email": "aditya.khamparia88@gmail.com",
+    "bio": "Dr. Aditya Khamparia is an eminent academician with 8 years of teaching and 1 year of industry experience. His expertise spans Educational Technologies, Intelligent Data Analysis, Machine Learning, Deep Learning, and Soft Computing. He has published over 73 research papers, served as guest editor for journals, and contributed significantly to academia and research worldwide."
+  },
+
+  "education": [
+    {
+      "degree": "Ph.D. in Computer Science",
+      "institution": "Lovely Professional University",
+      "duration": "2013 - 2018",
+      "thesis": "Intelligent Computing Methods in E-learning Environment"
+    },
+    {
+      "degree": "M.Tech in Computer Science & Engineering",
+      "institution": "VIT University",
+      "duration": "2011 - 2013",
+      "thesis": "Firmware Validation and Optimization for Sensor Hub"
+    },
+    {
+      "degree": "B.E. in Computer Science & Engineering",
+      "institution": "Rajiv Gandhi Technological University",
+      "duration": "2006 - 2010"
+    }
+  ],
+
+  "experience": [
+    {
+      "role": "Assistant Professor",
+      "institution": "Babasaheb Bhimrao Ambedkar University, Lucknow",
+      "duration": "April 2021 - Present",
+      "courses": ["C Programming", "C++ Lab", "Computer Graphics"]
+    },
+    {
+      "role": "Associate Professor",
+      "institution": "Lovely Professional University, Punjab",
+      "duration": "Jan 2020 - Mar 2021",
+      "courses": ["C Programming", "Machine Learning", "Soft Computing Techniques"]
+    },
+    {
+      "role": "Post Doctoral Researcher",
+      "institution": "University of Fortaleza, Brazil",
+      "duration": "Dec 2018 - Dec 2019",
+      "focus": ["Deep Learning", "Artificial Intelligence", "Python Programming"]
+    },
+    {
+      "role": "Assistant Professor",
+      "institution": "Lovely Professional University, Punjab",
+      "duration": "Aug 2013 - Dec 2018",
+      "courses": ["Deep Learning", "Machine Learning", "Artificial Intelligence", "Python Programming"]
+    }
+  ],
+
+  "research_projects": [
+    {
+      "title": "Adaptable E-learning System for Neuromuscular Disease Affected Children",
+      "role": "Co-Principal Investigator",
+      "funding": "ICSSR, New Delhi",
+      "duration": "Dec 2018 - Dec 2020",
+      "description": "Designed and developed a game-driven LMS for children with neuromuscular disorders (DMD, BMD, LGMD) to improve reading, writing, and learning."
+    }
+  ],
+
+  "publications": {
+    "journals": [
+      {
+        "title": "DCAVN: Cervical cancer prediction and classification using deep convolutional and variational autoencoder network",
+        "authors": ["Aditya Khamparia", "Deepak Gupta", "Joel JPC Rodrigues", "Victor Hugo C de Albuquerque"],
+        "journal": "Multimedia Tools and Applications",
+        "publisher": "Springer",
+        "year": 2020,
+        "doi": "https://doi.org/10.1007/s11042-020-09607-w",
+        "indexing": "SCIE",
+        "impact_factor": 2.69
+      },
+      {
+        "title": "Internet of health things driven deep learning system for detection and classification of cervical cells",
+        "authors": ["Aditya Khamparia", "Deepak Gupta", "Victor Hugo C de Albuquerque", "Arun Kumar Sangaiah", "Rutvij H. Jhaveri"],
+        "journal": "Journal of Supercomputing",
+        "publisher": "Springer",
+        "year": 2020,
+        "doi": "10.1007/s11227-020-03159-4",
+        "indexing": "SCIE",
+        "impact_factor": 2.25
+      }
+    ],
+    "conferences": [
+      {
+        "title": "Adaptive Thresholding Skin Lesion Segmentation with Gabor Filters and PCA",
+        "authors": ["Dang NH Thanh", "Nguyen Ngoc Hien", "VB Surya Prasath", "Uğur Erkan", "Aditya Khamparia"],
+        "conference": "Intelligent Computing in Engineering",
+        "location": "Singapore",
+        "publisher": "Springer",
+        "year": 2020,
+        "indexing": "Scopus"
+      }
+    ]
+  },
+
+  "books": [
+    {
+      "title": "E-Learning Innovations",
+      "publisher": "Springer",
+      "year": 2018
+    }
+  ],
+
+  "projects": [
+    {
+      "title": "Sleeve Classification with Grad-CAM",
+      "tech": ["TensorFlow"],
+      "description": "Classification with visualization of image regions affecting decision-making.",
+      "link": "[Link]"
+    },
+    {
+      "title": "Image Classification using MobileNet",
+      "tech": ["TensorFlow.js", "HTML", "jQuery"],
+      "description": "Web app for image classification with top-3 predictions.",
+      "link": "[Link]"
+    }
+  ],
+
+  "skills": ["Python", "MATLAB", "TensorFlow", "Keras", "C", "Java", "TensorFlow.js", "SQL", "Git", "HTML", "CSS", "JavaScript"],
+
+  "professional_activities": {
+    "invited_talks": [
+      {
+        "title": "Machine Learning: Practical Approach for Beginners",
+        "event": "TEQIP-III Workshop",
+        "location": "Global Group, Jammu",
+        "date": "Aug 2019"
+      },
+      {
+        "title": "AI & Machine Learning using Python",
+        "event": "FDP",
+        "location": "Lovely Professional University",
+        "date": "Feb 2020"
+      }
+    ],
+    "reviewer_for": [
+      "IEEE Transactions on AI",
+      "Expert Systems with Applications (Elsevier)",
+      "Expert Systems (Wiley)",
+      "IEEE IoT Magazine"
+    ]
+  },
+
+  "achievements": [
+    "Best Researcher Award (2015-16, 2016-17, 2017-18, 2018-19, LPU)",
+    "Best Paper Award at International Multi-track Conference, 2014",
+    "Honorary Editor of ICSES Transactions on Image Processing and Pattern Recognition"
+  ],
+
+  "memberships": ["ISTE", "IAENG", "IACSIT", "CSI", "ACM", "IET", "Internet Society"]
+}

@@ -1,0 +1,28 @@
+[
+  {
+    "degree": "BCA",
+    "institution": "XYZ College",
+    "year": "2022-2025"
+  },
+  {
+    "degree": "High School",
+    "institution": "ABC School",
+    "year": "2020"
+  }, {
+      "degree": "Ph.D. in Computer Science",
+      "institution": "Lovely Professional University",
+      "duration": "2013 - 2018",
+      "thesis": "Intelligent Computing Methods in E-learning Environment"
+    },
+    {
+      "degree": "M.Tech in Computer Science & Engineering",
+      "institution": "VIT University",
+      "duration": "2011 - 2013",
+      "thesis": "Firmware Validation and Optimization for Sensor Hub"
+    },
+    {
+      "degree": "B.E. in Computer Science & Engineering",
+      "institution": "Rajiv Gandhi Technological University",
+      "duration": "2006 - 2010"
+    }
+]
