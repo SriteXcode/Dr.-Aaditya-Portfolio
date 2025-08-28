@@ -603,13 +603,14 @@ import {
   Search, Plus, Edit, Trash2, Send, User, Calendar, Award, Briefcase, Eye,
   GraduationCap, Users, Star, Globe, BookOpen, Presentation
 } from 'lucide-react';
-import hero from "./assets/hero.png";
+import hero from "../src/assets/hero.png";
 
 // Academic Data for Dr. Aditya Khamparia
 const academicData = {
   profile: {
     name: "Dr. Aditya Khamparia",
     title: "Researcher · Learner · Educator",
+    aboutHero : "Dr. Aditya Khamparia is an eminent academician who plays versatile roles juggling between lectures, research, publications, consultancy, community service, and PhD supervision.",
     about: "Dr. Aditya Khamparia is an eminent academician who plays versatile roles juggling between lectures, research, publications, consultancy, community service, and PhD supervision. With 8 years of rich expertise in teaching and one year in industry, he focuses on rational and practical learning. He has contributed massive literature in Educational Technologies, Intelligent Data Analysis, Nature-Inspired Computing, Machine Learning, Deep Learning and Soft Computing.",
     image: hero,
     email: "aditya.khamparia88@gmail.com",
@@ -938,7 +939,7 @@ const AcademicPortfolio = () => {
           <div>
             <h1 className="text-5xl font-bold text-gray-900 mb-4">{data.profile.name}</h1>
             <p className="text-2xl text-blue-600 font-semibold mb-4">{data.profile.title}</p>
-            <p className="text-lg text-gray-600 mb-8">{data.profile.about}</p>
+            <p className="text-lg text-gray-600 mb-8">{data.profile.about.split(" ").slice(0, 22).join(" ")}</p>
             
             {/* Stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
