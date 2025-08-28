@@ -603,6 +603,7 @@ import {
   Search, Plus, Edit, Trash2, Send, User, Calendar, Award, Briefcase, Eye,
   GraduationCap, Users, Star, Globe, BookOpen, Presentation
 } from 'lucide-react';
+import hero from "./assets/hero.png";
 
 // Academic Data for Dr. Aditya Khamparia
 const academicData = {
@@ -610,7 +611,7 @@ const academicData = {
     name: "Dr. Aditya Khamparia",
     title: "Researcher · Learner · Educator",
     about: "Dr. Aditya Khamparia is an eminent academician who plays versatile roles juggling between lectures, research, publications, consultancy, community service, and PhD supervision. With 8 years of rich expertise in teaching and one year in industry, he focuses on rational and practical learning. He has contributed massive literature in Educational Technologies, Intelligent Data Analysis, Nature-Inspired Computing, Machine Learning, Deep Learning and Soft Computing.",
-    image: "/api/placeholder/400/400",
+    image: hero,
     email: "aditya.khamparia88@gmail.com",
     phone: "+91 XXX XXX XXXX",
     location: "Lucknow, Uttar Pradesh, India"
@@ -962,9 +963,14 @@ const AcademicPortfolio = () => {
             <button onClick={() => scrollToSection('contact')} className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors mr-4">Contact Me</button>
             <button onClick={() => scrollToSection('research')} className="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-lg hover:bg-blue-600 hover:text-white transition-colors">View Research</button>
           </div>
-          <div className="flex justify-center">
-            <img src={data.profile.image} alt={data.profile.name} className="w-96 h-96 object-cover rounded-full shadow-2xl" />
-          </div>
+          <div className="flex justify-center items-center w-86 h-98 ml-32 overflow-hidden rounded-b-full shadow-2xl">
+  <img
+    src={hero}
+    alt={data.profile.name}
+    className="w-full h-full object-cover"
+  />
+</div>
+
         </div>
       </div>
     </section>
