@@ -988,7 +988,7 @@ const AcademicPortfolio = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mb-16">
           <div>
-            <img src={data.profile.image} alt={data.profile.name} className="w-full h-96 object-cover rounded-lg shadow-lg mb-6" />
+            <img src={hero} alt={data.profile.name} className="w-full h-96 object-cover rounded-lg shadow-lg mb-6" />
             
             {/* Research Areas */}
             <div className="bg-gray-50 p-6 rounded-lg">
