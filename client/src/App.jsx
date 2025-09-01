@@ -1660,6 +1660,7 @@ import Home from "./pages/Home";
 import Admin from "./pages/Admin";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import ProtectedRoute from "./components/ProtectedRoute";
 
 import { AcademicDataProvider } from "./context/AcademicDataContext";
 
@@ -1671,7 +1672,14 @@ const App = () => {
         
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="api/admin01" element={<Admin />} />
+          <Route
+    path="/admin01"
+    element={
+      <ProtectedRoute>
+        <Admin/>
+      </ProtectedRoute>
+    }
+  />
         </Routes>
         
         <Footer />

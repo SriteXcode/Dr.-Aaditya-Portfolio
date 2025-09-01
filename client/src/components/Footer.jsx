@@ -5,7 +5,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 const Footer = () => {
   const { data } = useAcademicData();
   const location = useLocation();
-  const isAdmin = location.pathname === '/api/admin01';
+  const isAdmin = location.pathname === '/admin01';
 
   const quickLinks = [
     { id: 'about', label: 'About' },
@@ -75,7 +75,7 @@ const Footer = () => {
            {/* Sirf normal pages pe admin button dikhana */}
         {!isAdmin && (
           <a
-            href="/api/admin01"
+            href="/admin01"
             className="text-xs text-gray-600 mt-2 hover:text-gray-400 transition-colors inline-block"
           >
             Admin

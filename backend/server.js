@@ -40,4 +40,11 @@ app.get("/api/message", (req, res) => {
   res.json({ text: "Hello from Express Backend 🚀" });
 });
 
+// Serve React build
+app.use(express.static(path.join(__dirname, "../frontend/dist")));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "../frontend/dist/index.html"));
+});
+
 app.listen(PORT, () => console.log(`✅ Server running on http://localhost:${PORT}`));
