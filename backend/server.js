@@ -6,7 +6,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(cors({
-  origin: "http://localhost:5173", // frontend
+  origin: ["http://localhost:5173", "https://dr-aaditya-portfolio.onrender.com"], // frontend
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
