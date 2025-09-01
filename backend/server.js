@@ -41,11 +41,13 @@ app.get("/api/message", (req, res) => {
   res.json({ text: "Hello from Express Backend 🚀" });
 });
 
-// Serve React build
-app.use(express.static(path.join(__dirname, "../frontend/dist"))); // ✅ point to dist folder
+// ----------------- Serve React SPA -----------------
+const frontendDistPath = path.join(__dirname, "../frontend/dist");
+app.use(express.static(frontendDistPath));
 
-app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "../frontend/dist/index.html"));
+// Catch all React routes (must be after all API routes)
+app.get("/*", (req, res) => {
+  res.sendFile(path.join(frontendDistPath, "index.html"));
 });
 
 app.listen(PORT, () => console.log(`✅ Server running on http://localhost:${PORT}`));
