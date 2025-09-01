@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import API from "../Api"; // axios instance (baseURL should be set)
+import Loader from "../components/Loader";
 
 const AdminMessages = () => {
   const [messageData, setMessageData] = useState([]);
@@ -43,8 +44,23 @@ const AdminMessages = () => {
     }
   };
 
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error loading messages.</p>;
+ // Show Loader while fetching
+  if (loading) {
+    return (
+      <div className="flex justify-center items-center h-64">
+        <Loader />
+      </div>
+    );
+  }
+
+  // Show error message
+  if (error) {
+    return (
+      <div className="flex justify-center items-center h-64 text-red-500 text-lg">
+        Error loading messages.
+      </div>
+    );
+  }
 
   return (
     <div>
