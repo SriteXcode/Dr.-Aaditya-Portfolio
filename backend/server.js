@@ -42,7 +42,7 @@ app.get("/api/message", (req, res) => {
 });
 
 // Serve React build
-app.use(express.static(path.join("../frontend/src/pages/admin.jsx", "../frontend/dist")));
+app.use(express.static(path.join(__dirname, "../frontend/dist"))); // ✅ point to dist folder
 
 app.get("*", (req, res) => {
   res.sendFile(path.resolve(__dirname, "../frontend/dist/index.html"));
