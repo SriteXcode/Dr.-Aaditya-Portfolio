@@ -3,7 +3,7 @@ const express = require("express");
 const cors = require("cors");
 const connectdb = require('./utils/mongodb');
 const app = express();
-const path = require("path");
+
 const PORT = process.env.PORT || 5000;
 
 app.use(cors({
@@ -41,13 +41,5 @@ app.get("/api/message", (req, res) => {
   res.json({ text: "Hello from Express Backend 🚀" });
 });
 
-// ----------------- Serve React SPA -----------------
-const frontendDistPath = path.join(__dirname, "../frontend/dist");
-app.use(express.static(frontendDistPath));
-
-// Catch all React routes (must be after all API routes)
-app.get("/*", (req, res) => {
-  res.sendFile(path.join(frontendDistPath, "index.html"));
-});
 
 app.listen(PORT, () => console.log(`✅ Server running on http://localhost:${PORT}`));
