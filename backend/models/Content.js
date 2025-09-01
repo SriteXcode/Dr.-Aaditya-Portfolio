@@ -1,35 +1,38 @@
 const mongoose = require("mongoose");
 
+// Common fields
 const baseSchema = {
-  title: String,
-  category: String,
-  description: String,
-  publishedYear: String,
+  title: { type: String, required: true },
+  category: { type: String, required: true },
+  description: { type: String },
+  publishedYear: { type: String },
   image: { type: String, default: "/api/placeholder/300/400" },
-  document: String,
+  document: { type: String }, // e.g., PDF link
 };
 
+// Book schema
 const bookSchema = new mongoose.Schema({
   ...baseSchema,
-  publisher: String,
+  publisher: { type: String, required: true },
 });
 
-const thesisSchema = new mongoose.Schema({
+// Research Project (Paper) schema
+const researchProjectSchema = new mongoose.Schema({
   ...baseSchema,
-  university: String,
+  journal: { type: String }, // optional, in case published in a journal
+  impactFactor: { type: Number }, // numeric value
+  indexed: { type: [String] }, // ["SCIE", "Scopus", "ESCI", ...]
 });
 
-const researchPaperSchema = new mongoose.Schema({
-  ...baseSchema,
-  journal: String,
-});
+// Prevent OverwriteModelError by reusing existing models
+const Book =
+  mongoose.models.Book || mongoose.model("Book", bookSchema);
 
-// export const Book = mongoose.model("Book", bookSchema);
-// export const Thesis = mongoose.model("Thesis", thesisSchema);
-// export const ResearchPaper = mongoose.model("ResearchPaper", researchPaperSchema);
+const ResearchProject =
+  mongoose.models.ResearchProject ||
+  mongoose.model("ResearchProject", researchProjectSchema);
 
 module.exports = {
-  Book: mongoose.model("Book", bookSchema),
-  Thesis: mongoose.model("Thesis", thesisSchema),
-  ResearchPaper: mongoose.model("ResearchPaper", researchPaperSchema)
+  Book,
+  ResearchProject,
 };
