@@ -3,6 +3,7 @@ const express = require("express");
 const cors = require("cors");
 const connectdb = require('./utils/mongodb');
 const app = express();
+const path = require("path");
 const PORT = process.env.PORT || 5000;
 
 app.use(cors({
@@ -41,7 +42,7 @@ app.get("/api/message", (req, res) => {
 });
 
 // Serve React build
-app.use(express.static(path.join(__dirname, "../frontend/dist")));
+app.use(express.static(path.join("../frontend/src/pages/admin.jsx", "../frontend/dist")));
 
 app.get("*", (req, res) => {
   res.sendFile(path.resolve(__dirname, "../frontend/dist/index.html"));
