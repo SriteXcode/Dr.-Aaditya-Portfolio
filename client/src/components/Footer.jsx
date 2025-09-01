@@ -74,12 +74,9 @@ const Footer = () => {
           </p>
            {/* Sirf normal pages pe admin button dikhana */}
         {!isAdmin && (
-          <a
-            href="/admin01"
-            className="text-xs text-gray-600 mt-2 hover:text-gray-400 transition-colors inline-block"
-          >
-            Admin
-          </a>
+          <Link to="/admin01" className="text-xs text-gray-600 mt-2 hover:text-gray-400 transition-colors inline-block">
+  Admin
+</Link>
         )}
         </div>
       </div>
