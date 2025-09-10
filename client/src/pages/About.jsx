@@ -19,7 +19,7 @@ const About = () => {
             <img 
               src={hero2} 
               alt="Dr. Aditya Khamparia" 
-              className="w-full h-96 object-cover rounded-lg shadow-lg mb-6" 
+              className="w-full h-176 object-cover rounded-lg shadow-lg mb-6" 
             />
             
             {/* Research Areas */}
@@ -77,7 +77,7 @@ const About = () => {
             <div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">Recent Achievements</h3>
               <div className="space-y-3">
-                {data.achievements.slice(0, 3).map((achievement) => (
+                {data.achievements.slice(0, 8).map((achievement) => (
                   <div key={achievement.id} className="flex items-start">
                     <Award className="w-5 h-5 text-yellow-500 mr-3 mt-1 flex-shrink-0" />
                     <div>

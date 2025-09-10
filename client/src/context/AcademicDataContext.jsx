@@ -6,7 +6,7 @@ const academicData = {
     name: "Dr. Aditya Khamparia",
     title: "Researcher · Learner · Educator",
     aboutHero: "Dr. Aditya Khamparia is an eminent academician who plays versatile roles juggling between lectures, research, publications, consultancy, community service, and PhD supervision.",
-    about: "Dr. Aditya Khamparia is an eminent academician who plays versatile roles juggling between lectures, research, publications, consultancy, community service, and PhD supervision. With 8 years of rich expertise in teaching and one year in industry, he focuses on rational and practical learning. He has contributed massive literature in Educational Technologies, Intelligent Data Analysis, Nature-Inspired Computing, Machine Learning, Deep Learning and Soft Computing.",
+    about: "Dr. Aditya Khamparia is an eminent academician who plays versatile roles juggling between lectures, research, publications, consultancy, community service, and PhD supervision. With 18 years of rich expertise in teaching and one year in industry, he focuses on rational and practical learning. He has contributed massive literature in Educational Technologies, Intelligent Data Analysis, Nature-Inspired Computing, Machine Learning, Deep Learning and Soft Computing.",
     image: "https://ik.imagekit.io/nx2mu5rdoc/dummy/hero.png?updatedAt=1756370356605",
     email: "aditya.khamparia88@gmail.com",
     phone: "+91 XXX XXX XXXX",
@@ -196,41 +196,76 @@ const academicData = {
       id: 3,
       scholar: "Dr. Amritpal Singh",
       title: "A Nature Inspired Hybrid Approach to Solve Unit Commitment Scheduling Problem",
-      status: "Final Viva Voce Completed",
+      status: "Degree Awarded",
+      institution: "Lovely Professional University"
+    },
+    {
+      id: 4,
+      scholar: "Dr. Sagar D Pandey",
+      title: ".....",
+      status: "Degree Awarded",
       institution: "Lovely Professional University"
     }
   ],
   achievements: [
     {
       id: 1,
+      year: "2023-24",
+      title: "Research and Academic Excellence Award",
+      value: "Rs 50,000",
+      institution: "Babasaheb Bhimrao Ambedkar University"
+    },
+    {
+      id: 2,
+      year: "2022-23",
+      title: "Research and Academic Excellence Award",
+      value: "Rs 50,000",
+      institution: "Babasaheb Bhimrao Ambedkar University"
+    },
+    {
+      id: 3,
+      year: "2021-22",
+      title: "Research and Academic Excellence Award",
+      value: "Rs 50,000",
+      institution: "Babasaheb Bhimrao Ambedkar University"
+    },
+    {
+      id: 4,
+      year: "2020-21",
+      title: "Best Researcher Excellence Award",
+      value: "Rs 50,000",
+      institution: "Babasaheb Bhimrao Ambedkar University"
+    },
+    {
+      id: 5,
       year: "2018-19",
       title: "Best Researcher Excellence Award",
       value: "Rs 50,000",
       institution: "Lovely Professional University"
     },
     {
-      id: 2,
+      id: 6,
       year: "2017-18",
       title: "Best Researcher Award",
       value: "Rs 10,000",
       institution: "Lovely Professional University"
     },
     {
-      id: 3,
+      id: 7,
       year: "2016-17",
       title: "Best Researcher Award",
       value: "Rs 30,000",
       institution: "Lovely Professional University"
     },
     {
-      id: 4,
+      id: 8,
       year: "2015-16",
       title: "Best Researcher Award",
       value: "Rs 25,000",
       institution: "Lovely Professional University"
     },
     {
-      id: 5,
+      id: 9,
       year: "2014",
       title: "Best Paper Award",
       value: "Recognition",
@@ -256,7 +291,7 @@ const academicData = {
     publications: 73,
     sciIndexed: 26,
     hIndex: "15+",
-    citations: "500+",
+    citations: "7053+",
     projects: 5,
     phdSupervised: 3
   }
